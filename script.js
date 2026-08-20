@@ -26,3 +26,5 @@ const observer = new IntersectionObserver((entries)=>{
 },{threshold:.08});
 
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.addEventListener('DOMContentLoaded',()=>{const p=document.getElementById('gan-local-player'),s=document.getElementById('gan-local-source'),t=document.getElementById('gan-local-title'),cs=document.querySelectorAll('.video-select-card[data-video-src]');if(!p||!s)return;cs.forEach(c=>c.addEventListener('click',()=>{s.src=c.dataset.videoSrc;p.load();p.play().catch(()=>{});if(t)t.textContent=c.dataset.videoTitle;cs.forEach(x=>x.classList.remove('is-active'));c.classList.add('is-active');p.scrollIntoView({behavior:'smooth',block:'center'})}))});
