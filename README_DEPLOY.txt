@@ -1,1 +1,1 @@
-FINAL MP4 deployment build. Upload all contents to the repository root. All films are locally hosted; no YouTube is used.
+MP4 deployment build with responsive mobile hamburger menu. Desktop navigation unchanged.
